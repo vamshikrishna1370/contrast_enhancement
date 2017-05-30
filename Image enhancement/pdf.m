@@ -1,4 +1,4 @@
-%%              Interval Type-2 Approach to Automatic PDF Generation for Histogram Specification
+%%     Vamshi         Interval Type-2 Approach to Automatic PDF Generation for Histogram Specification
 
 %% Data pre-processing -- Give Input Here
 
