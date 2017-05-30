@@ -170,8 +170,9 @@ imgEnhanced = histeq(img_o, pdfFinal);
 
 %METHOD 8.1--Evaluating performance according to AIC-More Increment, better
 %enhancement
-
-temp = -pdfFinal(pdfFinal~=0);
+hist_enhanced = imhist(imgEnhanced);
+hist_enhanced = hist_enhanced./sum(hist_enhanced);
+temp = -hist_enhanced(hist_enhanced~=0);
 scoreEnhanced = sum(temp.*log2(temp));
 fprintf('Enhanced Image Score: %f \n',scoreEnhanced);
 
